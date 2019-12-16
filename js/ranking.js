@@ -2,7 +2,7 @@ var jugadors;
 
 var userSelection = document.getElementsByClassName("option");
 var modal = document.getElementsByClassName("modal")[0];
-var span = document.getElementsByClassName("close")[0]
+var span = document.getElementsByClassName("close")[0];
 
 for (let i = 0; i < userSelection.length; i++) {
   userSelection[i].addEventListener("click", function() {
@@ -46,11 +46,11 @@ function crearRanking(jugadores) {
 
   var segundo;
   var tercero;
-  if(jugadores.length > 1) {
+  if (jugadores.length > 1) {
     segundo = jugadores[1];
   }
   if (jugadores.length > 2) {
-    tercero = jugadores[2]; 
+    tercero = jugadores[2];
   }
 
   var nombre_primero = document.querySelector(".podium.gold .title");
@@ -58,14 +58,14 @@ function crearRanking(jugadores) {
 
   var date_primero = document.querySelector(".podium.gold .year-group");
   date_primero.innerHTML = new Date(primero.data).getFullYear();
-  
+
   var nombre_primero = document.querySelector(".podium.gold .points");
   nombre_primero.innerHTML = primero.puntuacio;
 
-  if (typeof segundo !== 'undefined') {
+  if (typeof segundo !== "undefined") {
     var nombre_segundo = document.querySelector(".podium.silver .title");
     nombre_segundo.innerHTML = segundo.nom;
-    
+
     var date_segundo = document.querySelector(".podium.silver .year-group");
     date_segundo.innerHTML = new Date(segundo.data).getFullYear();
 
@@ -75,10 +75,10 @@ function crearRanking(jugadores) {
     document.querySelector(".podium.silver").style.display = "none";
   }
 
-  if (typeof tercero !== 'undefined') {
+  if (typeof tercero !== "undefined") {
     var nombre_tercero = document.querySelector(".podium.bronze .title");
     nombre_tercero.innerHTML = tercero.nom;
-    
+
     var date_tercero = document.querySelector(".podium.bronze .year-group");
     date_tercero.innerHTML = new Date(tercero.data).getFullYear();
 
@@ -144,8 +144,8 @@ function daylyPlayers() {
       }
     }
   }
-  
-  if(jugadorsDaily.length > 1) {
+
+  if (jugadorsDaily.length >= 1) {
     var content = document.getElementsByClassName("podium-places-container")[0];
     content.style.display = "flex";
     crearRanking(jugadorsDaily);
@@ -172,8 +172,8 @@ function monthlyPlayers() {
       }
     }
   }
-  
-  if(jugadorsMonthly.length > 1) {
+
+  if (jugadorsMonthly.length >= 1) {
     var content = document.getElementsByClassName("podium-places-container")[0];
     content.style.display = "flex";
     crearRanking(jugadorsMonthly);
@@ -184,7 +184,7 @@ function monthlyPlayers() {
 
 function allTimePlayers() {
   var content = document.getElementsByClassName("podium-places-container")[0];
-    content.style.display = "flex";
+  content.style.display = "flex";
 
   var list_container = document.getElementsByClassName(
     "places-list-container"
@@ -194,8 +194,8 @@ function allTimePlayers() {
     list_container.removeChild(child);
     child = list_container.lastElementChild;
   }
-  
-  if(typeof jugadors !== "undefined") {
+
+  if (typeof jugadors !== "undefined") {
     crearRanking(jugadors);
   } else {
     modalNoJugadors();
@@ -207,6 +207,7 @@ var sortir = document.getElementById("esborrarCookie");
 
 sortir.addEventListener("click", function() {
   delete_cookie("currentUser");
+  delete_cookie("puntuacioQuiz");
 });
 
 function modalNoJugadors() {
@@ -217,13 +218,13 @@ function modalNoJugadors() {
 
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 window.onload = function() {
   if (getCookie("jugadorsRanking") != "") {
@@ -232,13 +233,11 @@ window.onload = function() {
     jugadors.sort(compare); //Ordena el array por puntuación descendente
 
     daylyPlayers();
-  }
-  else {
+  } else {
     modalNoJugadors();
   }
 
   userSelection[0].addEventListener("click", monthlyPlayers);
   userSelection[1].addEventListener("click", daylyPlayers);
   userSelection[2].addEventListener("click", allTimePlayers);
-
 };

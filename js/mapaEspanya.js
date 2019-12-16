@@ -23,7 +23,7 @@ window.onload = function() {
     polygonTemplate.size = 100;
     
     polygonTemplate.tooltipText = " [font-size: 33px] {name} {radio} [/]";
-    polygonTemplate.fill = am4core.color("#C00000");
+    polygonTemplate.fill = am4core.color("#11999e");
     // create capital markers
     var imageSeries = chart.series.push(new am4maps.MapImageSeries());
     
@@ -43,17 +43,17 @@ window.onload = function() {
     imageSeriesTemplate.tooltipText = "[font-size: 33px] {title}";
     imageSeriesTemplate.fill = am4core.color("#C00000");
     
-    var dado=1;
+    var escoltant = 1;
     circle.events.on("hit", function(event) {
      var data = event.target.dataItem.dataContext;
        
-        if(dado==1){
+        if(escoltant==1){
         x=new Audio(data.radio)
         playPause(x);
-         dado++;
+        escoltant++;
        }
       else{
-        dado=1;
+        escoltant=1;
         playStop(x);
       }
     }),
