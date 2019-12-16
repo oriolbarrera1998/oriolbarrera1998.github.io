@@ -1,0 +1,49 @@
+#webApp{
+  width: 100%;
+  height: 100vh;
+}
+
+#webCamPlay{
+  display:none;
+}
+#webCamPause{
+  display:inline-block;
+}
+
+#retroWebCam{
+  position: absolute;
+  top: 8%;
+  right: 20.5%;
+  width: 800px;
+  height: 400px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 2.2px;
+  margin-top: -0.5px;
+  transition: 0.2s;
+}
+
+#videoElement{
+  width: 800px;
+  height: 400px; 
+}
+
+#canvas{
+  display: none;
+  width: 800px;
+  height: 400px;
+}
+
+#downloadCanvas{
+  display: none;
+  object-fit: contain;
+}
+
+#capture {
+  display: none;
+  margin-left: 2vh;
+}
+
+#cameraOn {
+  margin-left: 2vh;
+}

@@ -1,0 +1,11 @@
+.container #taula{
+    width: 100%;
+    background-color: grey;
+    height: 800px;
+    position: relative;
+    margin: 1em auto;
+}
+
+.modal-footer a{
+    margin: auto;
+}

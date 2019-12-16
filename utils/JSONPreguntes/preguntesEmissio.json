@@ -1,0 +1,27 @@
+[
+    {
+      "pregunta": "Qui va formular la teoria de les ones electromagnètiques?",
+      "opcio1": "James Clerk Maxwell ",
+      "opcio2": "Thomas Alva Edison",
+      "opcio3": "Alexander Graham Bell",
+      "opcio4": "Samuel Morse",
+      "resposta": 1
+    },
+    {
+      "pregunta": "Quines són les dues característiques principals de les ones sonores?",
+      "opcio1": "Longitud i distància",
+      "opcio2": "Transmissió i recepció",
+      "opcio3": "Latitud i logitud",
+      "opcio4": "Freqüència i latitud",
+      "imatge": "",
+      "resposta": 3
+    },
+    {
+      "pregunta": "Quina va ser la primera emisora de ràdio de Catalunya?",
+      "opcio1": "Ràdio Tarragona",
+      "opcio2": "Ràdio Lleida",
+      "opcio3": "Catalunya Ràdio",
+      "opcio4": "Ràdio Barcelona",
+      "resposta": 4
+    }
+  ]

@@ -1,0 +1,26 @@
+[
+    {
+      "pregunta": "Què fa un amplificador de só?",
+      "opcio1": "James Clerk Maxwell ",
+      "opcio2": "Thomas Alva Edison",
+      "opcio3": "Alexander Graham Bell",
+      "opcio4": "Samuel Morse",
+      "resposta": 1
+    },
+    {
+      "pregunta": "Què fa un demodulador?",
+      "opcio1": "1904",
+      "opcio2": "1854",
+      "opcio3": "1897",
+      "opcio4": "1790",
+      "resposta": 3
+    },
+    {
+      "pregunta": "Quines freqüències pot detectar la oïda humana?",
+      "opcio1": "15000 Hz",
+      "opcio2": "Entre 10 i 1000 cm",
+      "opcio3": "entre 50 i 2000 Hz",
+      "opcio4": "Entre 20 i 22000 Hz",
+      "resposta": 4
+    }
+  ]

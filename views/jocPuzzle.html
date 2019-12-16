@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../css/pulse-bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/puzzle.css" />
+  <link rel="stylesheet" href="../css/miCss.css" />
+  <link rel="stylesheet" href="../css/back.css" />
+  <link rel="stylesheet" href="../css/webcam.css" />
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/puzzle.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/back.js"></script>
+  <script src="../js/webcam.js"></script>
+  <script src="../js/cookieLanding.js"></script>
+  <script src="../js/events.js"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/tools.js"></script>
+  <script src="../js/cookieLanding.js"></script>
+
+  <title>
+    Joc 1
+  </title>
+</head>
+
+<body style="background-color: #e4f9f5 !important" onload="init()">
+  <div id="retroWebCam">
+    <video autoplay="true" id="videoElement"></video>
+    <canvas id="canvas"></canvas>
+    <canvas id="downloadCanvas" class="filterApply_nop"></canvas>
+  </div>
+  <div class="back-button">
+    <div class="arrow-wrap">
+      <span class="arrow-part-1"></span>
+      <span class="arrow-part-2"></span>
+      <span class="arrow-part-3"></span>
+    </div>
+  </div>
+  <div class="pie degree">
+    <span class="block"></span>
+    <span class="timeClock">0</span>
+  </div>
+  <div id="container">
+    <div class="button start buttonStyle1 buttonMenuLight">COMENÇAR</div>
+    <div class="box">
+      <div class="me full"></div>
+    </div>
+    <div class="pre_img">
+      <li data-bid="0">
+        <img src="http://www.voceslab.com/wp-content/uploads/2017/09/voz-sintetica.jpg" />
+      </li>
+      <li data-bid="1">
+        <img src="https://mnactec.cat/assets/uploads/gallery/imatgeweb-600x396.jpg" />
+      </li>
+      <li data-bid="2">
+        <img src="http://blogingenieria.com/wp-content/uploads/2014/04/antena-radio.jpg" />
+      </li>
+      <img id="cameraOn" src="https://image.flaticon.com/icons/png/512/3/3901.png" width="90px" />
+      <img id="capture" src="https://www.bitfm.es/wp-content/uploads/2016/10/download-icon-png-5.png" width="80px" />
+      <img data-bid="3" id="upfile1" src="http://www.festivalclaca.cat/pics/b/25/256838_download-icon-png.png"
+        width="90px" />
+      <input type="file" name="image" id="file1" style="display: none" />
+    </div>
+    <div>
+      <div id="resetPuzzle" class="button reset buttonStyle1 buttonMenuLight" align="center">
+        TORNA-HO A PROBAR
+      </div>
+    </div>
+  </div>
+
+  <div class="cover">
+    <div class="score">
+      <p id="scr_head">Puzzle solucionat</p>
+      <p id="scr_time">
+        Temps : <span id="min">00</span> Minuts
+        <span id="sec">00</span> Segons
+      </p>
+      <p id="scr_moves">
+        Moviments :
+        <span id="moves"></span>
+      </p>
+      <p id="scr_points">
+        Punts :
+        <span id="points"></span>
+      </p>
+      <div id="divOk" onclick="location.href='jocsMenu.html'" class="button OK buttonStyle1 buttonMenuLight">
+        OK
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

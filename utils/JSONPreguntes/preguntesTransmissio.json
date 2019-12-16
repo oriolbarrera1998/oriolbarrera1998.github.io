@@ -1,0 +1,42 @@
+[
+    {
+      "pregunta": "Quines dues maneres hi ha de modular les ones portadores?",
+      "opcio1": "AM i FM",
+      "opcio2": "AM i FL",
+      "opcio3": "FL i XL",
+      "opcio4": "FM i AL",
+      "resposta": 1
+    },
+    {
+      "pregunta": "Acaba la frase: El tó de veu es mesura en _____",
+      "opcio1": "Móduls",
+      "opcio2": "Metres",
+      "opcio3": "Hertz",
+      "opcio4": "Watts",
+      "resposta": 3
+    },
+    {
+      "pregunta": "Què és la modulació?",
+      "opcio1": "Augmentar la potència de les ones",
+      "opcio2": "El transport d'ones",
+      "opcio3": "Un tipus de só",
+      "opcio4": "El procés de superposició de senyals AF + RF",
+      "resposta": 4
+    },
+    {
+      "pregunta": "Com s'anomenen les ones portadores?",
+      "opcio1": "Ones FM",
+      "opcio2": "Ones AM",
+      "opcio3": "Ones RF",
+      "opcio4": "Ones modulars",
+      "resposta": 3
+    },
+    {
+      "pregunta": "Quina és la funció del micròfon?",
+      "opcio1": "Modular les ones",
+      "opcio2": "Generar ones sonores",
+      "opcio3": "Transformar ones sonores en senyal elèctrica",
+      "opcio4": "Rebre ones",
+      "resposta": 3
+    }
+  ]

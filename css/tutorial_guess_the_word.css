@@ -1,0 +1,60 @@
+:root {
+    --blue_1: #11999e;
+    --blue_body: #e4f9f5;
+}
+
+body {
+    background-color: var(--blue_body);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#titol {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#subtitol {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.centered {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 120vh;
+    height: 75vh;
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.9);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card-gif img {
+    width: 100%;
+    height: 64vh;
+    border-radius: 10px 10px 0 0;
+}
+
+button {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 11vh;
+    font-size: 3.2em;
+    font-weight: bold;
+    background-color: var(--blue_1);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background .4s ease, color .4s ease;
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase;
+    border-radius: 0 0 10px 10px;
+}

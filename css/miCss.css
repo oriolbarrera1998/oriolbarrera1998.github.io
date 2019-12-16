@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body,html {
+    background-color: #e4f9f5 !important;
+    height: 100% !important;
+    font-family: 'Open Sans', sans-serif;    
+}
+.container {
+    height: 100% !important;
+}
+.row {
+    height: 30% !important;
+}
+.space {
+    height: 20%;
+}
+
+
+.buttonMenuLight {
+    color: black;
+    text-align: center;
+    top: 50%;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: bold !important;
+}
+.buttonMenuDark {
+    color: black !important;
+    text-align: center;
+    top: 50%;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: bold !important;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+.imageMenu 
+{
+    height: 50% !important;
+}
+
+.textMenu
+{
+    height: 40% !important;
+}
+.buttonHeight
+{
+    height: 50%;
+}
+.buttonStyle1 
+{
+    margin: 10px;
+    border: 2px solid black;
+    padding: 6px 24px;
+    color: black;
+    background-color: #11999e;
+    transition: all 0.25s ease-in-out;
+}
+.buttonStyle1:hover {
+    background-color: #30e3ca;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+}
+.buttonStyle1:active {
+    background-color: #30e3ca;
+    border-color: black;
+    color: black;
+    box-shadow: none;
+}
+.buttonStyle1:focus, #buttonStyle1:active:focus {
+    background-color: #30e3ca;
+    border-color: black;
+    color: black;
+    outline: 5px auto #30e3ca;
+}
+.buttonStyle1:visited {
+    background-color: #11999e;
+    border-color: black;
+}
+.buttonStyle1:visited:hover {
+    background-color: #30e3ca;
+    border-color: black;
+}
+
+/* per al menu de jocs*/
+.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* bafarada */
+#globo{
+    background-image: url(../media/radio_top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#text_globo{
+    padding-top: 6%;
+    padding-right: 47%;
+    font-size: 18px;
+}

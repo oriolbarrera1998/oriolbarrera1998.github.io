@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/joc.css" />
+    <link rel="stylesheet" href="../css/miCss.css" />
+    <script src="../js/cookieLanding.js"></script>
+  </head>
+  <body>
+    <div class="cover">
+      <div class="score">
+        <div id="Ruleta">
+          <canvas id="canvas" width="500" height="500"></canvas>
+          <input type="button" value="GIRA" id="spin" class="buttonStyle1" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="joc" class="justify-center flex-column">
+        <div id="tipusPreg">
+          <h3 id="tipus"></h3>
+        </div>
+        <div id="temps"></div>
+        <div id="hud">
+          <div id="hudItem">
+            <p id="barraText" class="hudPrefix">
+              Pregunta
+            </p>
+            <div id="barraProgres">
+              <div id="estatBarraProgres"></div>
+            </div>
+          </div>
+          <div id="hudItem">
+            <p class="hudPrefix">
+              Punts
+            </p>
+            <h1 class="hudText" id="punts">
+              0
+            </h1>
+          </div>
+        </div>
+        <!--Contenidors per mostrar les preguntes-->
+        <h2 id="pregunta">Aqui van les preguntes</h2>
+
+        <!--Contenidors per mostrar les respostes-->
+        <div class="containerPregunta">
+          <p class="lletraOpcio">A</p>
+          <p class="textOpcio" data-numero="1"></p>
+        </div>
+        <div class="containerPregunta">
+          <p class="lletraOpcio">B</p>
+          <p class="textOpcio" data-numero="2"></p>
+        </div>
+        <div class="containerPregunta">
+          <p class="lletraOpcio">C</p>
+          <p class="textOpcio" data-numero="3"></p>
+        </div>
+        <div class="containerPregunta">
+          <p class="lletraOpcio">D</p>
+          <p class="textOpcio" data-numero="4"></p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/joc.js"></script>
+  </body>
+</html>

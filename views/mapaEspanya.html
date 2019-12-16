@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>RADIOS</title>
+        <link rel="stylesheet" href="../css/mapaEspanya.css">
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>  
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>     
+    </head>
+    <body>
+        <header>
+            RADIOS D'ESPANYA
+        </header>
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+      <div id="seleccio">
+        <form>
+          <input type="radio" name="anys" value="1" checked> 1920s<br>
+          <input type="radio" name="anys" value="2"> 1930s<br>
+          <input type="radio" name="anys" value="3"> 1940s<br>
+          <input type="radio" name="anys" value="4"> 1950s<br>
+          <input type="radio" name="anys" value="5"> 1960s<br>
+          <input type="radio" name="anys" value="6"> 1970s <br>
+          <input type="radio" name="anys" value="7"> 1980s <br>   
+          <input type="button" onclick="myFunction()" value="Mostra">
+        </form> 
+        
+      </div>
+        <div id="chartdiv">
+          <script src="https://www.amcharts.com/lib/4/geodata/spainLow.js"></script>
+            <script src="../js/mapaEspanya.js"></script>
+        </div>
+
+    </body>
+</html>

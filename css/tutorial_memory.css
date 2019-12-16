@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body,html {
+    background-color: #e4f9f5 !important;
+    height: 100% !important;
+    font-family: 'Open Sans', sans-serif;    
+}
+.space {
+    height: 20%;
+}
+.container {
+    height: 100% !important;
+}
+.row {
+    height: 30% !important;
+    margin-top: 20px;
+}
+.buttonStyle1 
+{
+    margin: 10px;
+    border: 2px solid black;
+    padding: 6px 24px;
+    color: black;
+    background-color: #11999e;
+    transition: all 0.25s ease-in-out;
+}
+.buttonMenuLight {
+    color: black;
+    text-align: center;
+    top: 50%;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: bold !important;
+}
