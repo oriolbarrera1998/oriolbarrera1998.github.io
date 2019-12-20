@@ -1,19 +1,11 @@
 [
     {
-      "pregunta": "Què fa un amplificador de só?",
-      "opcio1": "James Clerk Maxwell ",
-      "opcio2": "Thomas Alva Edison",
-      "opcio3": "Alexander Graham Bell",
-      "opcio4": "Samuel Morse",
+      "pregunta": "Acaba la frase: Una entena receptorarep el camp magnètic a través de ______",
+      "opcio1": "L'aire",
+      "opcio2": "Cables",
+      "opcio3": "L'electicitat",
+      "opcio4": "La llum",
       "resposta": 1
-    },
-    {
-      "pregunta": "Què fa un demodulador?",
-      "opcio1": "1904",
-      "opcio2": "1854",
-      "opcio3": "1897",
-      "opcio4": "1790",
-      "resposta": 3
     },
     {
       "pregunta": "Quines freqüències pot detectar la oïda humana?",
@@ -21,6 +13,22 @@
       "opcio2": "Entre 10 i 1000 cm",
       "opcio3": "entre 50 i 2000 Hz",
       "opcio4": "Entre 20 i 22000 Hz",
+      "resposta": 4
+    },
+    {
+      "pregunta": "Quin dels següents no és un tipus de canal?",
+      "opcio1": "Canal de banda ultrapetita",
+      "opcio2": "Canal de petit espectre",
+      "opcio3": "Canal de banda petita",
+      "opcio4": "Canal d'ampli espectre",
+      "resposta": 2
+    },
+    {
+      "pregunta": "Quina és la funció d'un amplificador IF?",
+      "opcio1": "Ampliar la senyal FM",
+      "opcio2": "Ampliar la senyal AM",
+      "opcio3": "Transportar ones",
+      "opcio4": "Ampliar la senyal IF",
       "resposta": 4
     }
   ]

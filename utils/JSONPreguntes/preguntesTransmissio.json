@@ -16,20 +16,12 @@
       "resposta": 3
     },
     {
-      "pregunta": "Què és la modulació?",
-      "opcio1": "Augmentar la potència de les ones",
-      "opcio2": "El transport d'ones",
-      "opcio3": "Un tipus de só",
-      "opcio4": "El procés de superposició de senyals AF + RF",
-      "resposta": 4
-    },
-    {
       "pregunta": "Com s'anomenen les ones portadores?",
       "opcio1": "Ones FM",
       "opcio2": "Ones AM",
       "opcio3": "Ones RF",
       "opcio4": "Ones modulars",
-      "resposta": 3
+      "resposta": 4
     },
     {
       "pregunta": "Quina és la funció del micròfon?",

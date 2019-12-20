@@ -1,3 +1,18 @@
+// agafem idioma
+var missatges = getCookie("idioma");
+missatges = JSON.parse(missatges);
+
+document.getElementById("moves").innerHTML = missatges.jocs.memoryFacil.moves;
+document.getElementById("ancerts").innerHTML = missatges.jocs.memoryFacil.ancerts;
+document.getElementById("time").innerHTML = missatges.jocs.memoryFacil.time;
+
+document.getElementById("scr_head").innerHTML = missatges.jocs.memoryFacil.scr_head;
+document.getElementById("scr_time").innerHTML = missatges.jocs.memoryFacil.scr_time;
+document.getElementById("scr_moves").innerHTML = missatges.jocs.memoryFacil.scr_moves;
+document.getElementById("scr_points").innerHTML = missatges.jocs.memoryFacil.scr_points;
+
+
+
 // taula
 var taula = {
   element: document.getElementById("llista"),
@@ -283,3 +298,4 @@ function endGame(acabat) {
 document.querySelector(".OK").addEventListener("click", function () {
   onclick = "location.href='jocsMenu.html'";
 });
+

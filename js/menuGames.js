@@ -1,23 +1,27 @@
-$(document).ready(function() {
-  $("#buttonPuzzle").hover(function() {
-    $(".titleRadio")[0].innerText = "LA EMISSIÓ";
+// agafem idioma
+var missatges = getCookie("idioma");
+missatges = JSON.parse(missatges);
+
+$(document).ready(function () {
+  $("#buttonPuzzle").hover(function () {
+    $(".titleRadio")[0].innerText = missatges.jocs.titol1;
   });
-  $("#buttonMemory").hover(function() {
-    $(".titleRadio")[0].innerText = "LA TRANSMISSIÓ";
+  $("#buttonMemory").hover(function () {
+    $(".titleRadio")[0].innerText = missatges.jocs.titol2;
   });
-  $("#buttonEsbrina").hover(function() {
-    $(".titleRadio")[0].innerText = "LA RECEPCIÓ";
+  $("#buttonEsbrina").hover(function () {
+    $(".titleRadio")[0].innerText = missatges.jocs.titol3;
   });
-  $("#buttonQuiz").hover(function() {
-    $(".titleRadio")[0].innerText = "LA VALIDACIÓ";
+  $("#buttonQuiz").hover(function () {
+    $(".titleRadio")[0].innerText = missatges.jocs.titol4;
   });
 });
 
-// creem la cookiee
+// creem la cookie del jugador
 function funcio() {
   var username = document.querySelector("#username");
   var name = username.value;
-  if (name.trim() != "" || !isNaN(name) || name.length != 8) {
+  if (name.trim() != "" && isNaN(name) && name.length <= 8) {
     if (getCookie("currentUser") == "") {
       var currentUser = {
         nom: username.value,
@@ -67,6 +71,22 @@ function comprovarJocs() {
       buttonQuiz.classList.add("disabled");
     }
   }
+}
+
+/*IDIOMA*/
+function idioma() {
+  // modal
+  document.getElementById("username").placeholder = missatges.jocs.modal;
+  
+  // menu
+  document.getElementById("titol").innerHTML = missatges.jocs.titol1;
+
+  // items
+  document.getElementById("item1").innerHTML = missatges.jocs.item1;
+  document.getElementById("item2").innerHTML = missatges.jocs.item2;
+  document.getElementById("item3").innerHTML = missatges.jocs.item3;
+  document.getElementById("item4").innerHTML = missatges.jocs.item4;
+
 }
 
 comprovarJocs();

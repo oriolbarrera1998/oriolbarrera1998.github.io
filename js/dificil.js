@@ -1,3 +1,17 @@
+// agafem idioma
+var missatges = getCookie("idioma");
+missatges = JSON.parse(missatges);
+
+document.getElementById("carta").innerHTML = missatges.jocs.memoryDificil.carta;
+document.getElementById("ancerts").innerHTML = missatges.jocs.memoryDificil.ancerts;
+document.getElementById("time").innerHTML = missatges.jocs.memoryDificil.time;
+
+document.getElementById("scr_head").innerHTML = missatges.jocs.memoryDificil.scr_head;
+document.getElementById("scr_time").innerHTML = missatges.jocs.memoryDificil.scr_time;
+document.getElementById("scr_moves").innerHTML = missatges.jocs.memoryDificil.scr_moves;
+document.getElementById("scr_points").innerHTML = missatges.jocs.memoryDificil.scr_points;
+
+
 // taula
 var taula = {
     element: document.getElementById('llista'),

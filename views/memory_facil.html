@@ -29,28 +29,26 @@
       <span class="arrow-part-3"></span>
     </div>
   </div>
-  <div id="container">        
+  <div id="container">
     <div>
       <!-- Fila on hi ha la info-->
       <div class="row text-center">
-        <!-- Cart a trobar-->
+        <!-- Moviments -->
         <div class="col-4">
-          <h4>
-            Moviments
+          <h4 id="moves">            
           </h4>
           <p class="display-4" id="moviments">0</p>
         </div>
 
         <!-- Encerts -->
         <div class="col-4">
-          <h4>Encerts</h4>
+          <h4 id="ancerts"></h4>
           <p id="encerts" class="display-4">0</p>
         </div>
 
         <!-- Temporitzador -->
         <div class="col-4">
-          <h4>
-            Temps
+          <h4 id="time">
           </h4>
           <div id="temporitzador">
             <p id="min" class="display-4">5</p>
@@ -59,10 +57,6 @@
           </div>
         </div>
       </div>
-      <!-- Prova
-                        <div class="restart" onclick=startGame()>
-                            hau
-                        </div>-->
     </div>
 
     <div id="taula">
@@ -72,15 +66,17 @@
   <!-- Modal (s'ha cabat el joc) -->
   <div class="cover">
     <div class="score">
-      <p id="scr_head">Memory acabat</p>
-      <p id="scr_time">
-        Temps total: <span id="mins">00</span> : <span id="secs">00</span>
-      </p>
+      <!-- titolModal -->
+      <p id="scr_head"></p>
+      <!-- Temps -->
+      <p id="scr_time"></p>
       <br />
-      <p id="scr_moves">Moviments : <span id="moves"></span></p>
-      <br />
-      <p id="scr_points">Punts : <span id="puntuacio"></span></p>
-          
+      <!-- Moviments -->
+      <p id="scr_moves"></p>
+      <br/>
+      <!-- Punts -->
+      <p id="scr_points"></p>     
+
       <div onclick="location.href='jocsMenu.html'" class="button OK buttonStyle1 buttonMenuLight">
         OK
       </div>

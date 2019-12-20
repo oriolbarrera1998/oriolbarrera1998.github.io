@@ -1,10 +1,25 @@
-var palabras = [
-  "antena",
-  "amplificador",
-  "mesclador",
-  "interferencia",
-  "filtre"
-];
+// agafem idioma
+var missatges = getCookie("idioma");
+missatges = JSON.parse(missatges);
+
+document.getElementById("buen-trabajo").innerHTML =
+  missatges.jocs.esbrina.bonaFeina;
+document.getElementById("paraula").innerHTML = missatges.jocs.esbrina.paraula;
+document.getElementById("next").innerHTML = missatges.jocs.esbrina.next;
+
+document.getElementById("final").innerHTML = missatges.jocs.esbrina.final;
+document.getElementById("parola").innerHTML = missatges.jocs.esbrina.paraula;
+document.getElementById("missatgeFinal").innerHTML =
+  missatges.jocs.esbrina.missatgeFinal;
+document.getElementById("sortir").innerHTML = missatges.jocs.esbrina.sortir;
+
+document.getElementById("sin-tiempo").innerHTML =
+  missatges.jocs.esbrina.senseTemps;
+document.getElementById("palabra").innerHTML = missatges.jocs.esbrina.paraula;
+document.getElementById("prossimo").innerHTML = missatges.jocs.esbrina.next;
+
+var palabras = missatges.jocs.esbrina.paraules;
+
 var nPalabrasTotal = palabras.length;
 
 var rWord;
@@ -88,7 +103,7 @@ function createLetterPannel() {
 
   var letras = palabra;
   //Le quitamos las letras repetidas
-  letras = letras.reduce(function (a, b) {
+  letras = letras.reduce(function(a, b) {
     if (a.indexOf(b) < 0) a.push(b);
     return a;
   }, []);
@@ -204,7 +219,7 @@ function openModalFailure() {
 function updateScore() {
   puntuacionPalabra = puntosAcierto + puntosLetra * nLetras;
   puntuacion += puntuacionPalabra + (puntosFallo - fallosActual);
-  puntuacionJuego.innerHTML = "Puntuació: " + puntuacion;
+  puntuacionJuego.innerHTML = missatges.jocs.esbrina.botoPuntuacio + puntuacion;
 }
 
 function startTimer() {
@@ -222,7 +237,7 @@ function startTimer() {
   duracion--;
   temporizador.innerHTML = duracion + " s";
   duracion--;
-  interval = setInterval(function () {
+  interval = setInterval(function() {
     temporizador.innerHTML = duracion + " s";
     duracion--;
 
@@ -273,7 +288,7 @@ function juego() {
     timer_part[i].style.animationDuration = "99999s";
   }
   temporizador.innerHTML = duration + " s";
-  puntuacionJuego.innerHTML = "Puntuació: " + puntuacion;
+  puntuacionJuego.innerHTML = missatges.jocs.esbrina.botoPuntuacio + puntuacion;
   document.querySelectorAll("#pannelLetter").forEach(item => {
     item.addEventListener("click", event => {
       if (!terminado && !pausa) {
@@ -363,7 +378,7 @@ function fireworks() {
       );
 
     // Draw each firework in the array (so you can have multiple fireworks at the same time)
-    fireworks.forEach(function (f) {
+    fireworks.forEach(function(f) {
       // Draw a firework only if it still has visible particles
       if (!f.isFinished()) f.draw(gctx);
     });
@@ -384,7 +399,7 @@ function fireworks() {
     fireworks.push(new Firework(e.clientX, e.clientY));
   }
 
-  var Firework = function (_x, _y) {
+  var Firework = function(_x, _y) {
     var targetX = _x;
     var targetY = _y;
     var power = 0.9; // Affects the movement speed of the particles
@@ -397,19 +412,19 @@ function fireworks() {
     var gravity = 0.1;
     var airResistence = 1.02; // It must be greater than 1 to avoid weird results.
 
-    this.draw = function (context) {
+    this.draw = function(context) {
       // TODO - Animation should stop when all particles are invisible
-      particles.forEach(function (p) {
+      particles.forEach(function(p) {
         p.update(gravity, airResistence);
         p.draw(context);
       });
     };
 
-    this.particleDead = function () {
+    this.particleDead = function() {
       deadCount++;
     };
 
-    this.isFinished = function () {
+    this.isFinished = function() {
       return deadCount == numParticles;
     };
 
@@ -423,7 +438,7 @@ function fireworks() {
     }
   };
 
-  var Particle = function (_x, _y, _radius, _dx, _dy, _hue, onDeath) {
+  var Particle = function(_x, _y, _radius, _dx, _dy, _hue, onDeath) {
     var x = _x;
     var y = _y;
     var radius = _radius;
@@ -435,7 +450,7 @@ function fireworks() {
     var dead = false;
 
     // Gravity and air resistance affect how X and Y change
-    this.update = function (gravity, airResistance) {
+    this.update = function(gravity, airResistance) {
       timeOfLife++;
 
       if (timeOfLife > 144 && !dead) {
@@ -454,7 +469,7 @@ function fireworks() {
       y += dy;
     };
 
-    this.draw = function (context) {
+    this.draw = function(context) {
       // NOTE: lightness 100% will make every color white.
       context.fillStyle = "hsla(" + hue + ", 60%, 42%, " + opacity + ")";
       context.fillRect(x, y, radius, radius);

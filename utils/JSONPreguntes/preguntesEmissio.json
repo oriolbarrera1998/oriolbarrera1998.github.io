@@ -23,5 +23,13 @@
       "opcio3": "Catalunya Ràdio",
       "opcio4": "Ràdio Barcelona",
       "resposta": 4
+    },
+    {
+      "pregunta": "Que és la longitud de les ones sonores?",
+      "opcio1": "La distància entre ones",
+      "opcio2": "La intensitat de les ones",
+      "opcio3": "La freqüència de les ones",
+      "opcio4": "EL nombre d'ones",
+      "resposta": 1
     }
   ]

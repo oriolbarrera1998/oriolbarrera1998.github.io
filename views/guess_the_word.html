@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="../media/guess_the_word.png">
-    <title>Esbrina-la NO4K</title>
+    <title>Esbrina-la</title>
     <link rel="stylesheet" href="../css/guess_the_word.css" />
     <link rel="stylesheet" href="../css/back.css" />
     <script src="../js/cookieLanding.js"></script>
@@ -16,51 +16,6 @@
     <div class="game">
         <div class="top-bar">
           <div class="left">
-            <!--<a href="../index.html">
-              <svg class="flecha-salir" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 492 492"
-                style="enable-background:new 0 0 492 492;" xml:space="preserve">
-                <g>
-                  <g>
-                    <path d="M464.344,207.418l0.768,0.168H135.888l103.496-103.724c5.068-5.064,7.848-11.924,7.848-19.124
-              			c0-7.2-2.78-14.012-7.848-19.088L223.28,49.538c-5.064-5.064-11.812-7.864-19.008-7.864c-7.2,0-13.952,2.78-19.016,7.844
-              			L7.844,226.914C2.76,231.998-0.02,238.77,0,245.974c-0.02,7.244,2.76,14.02,7.844,19.096l177.412,177.412
-              			c5.064,5.06,11.812,7.844,19.016,7.844c7.196,0,13.944-2.788,19.008-7.844l16.104-16.112c5.068-5.056,7.848-11.808,7.848-19.008
-              			c0-7.196-2.78-13.592-7.848-18.652L134.72,284.406h329.992c14.828,0,27.288-12.78,27.288-27.6v-22.788
-              			C492,219.198,479.172,207.418,464.344,207.418z" />
-                  </g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-              </svg>
-            </a>-->     
             <div class="back-button">
               <div class="arrow-wrap">
                 <span class="arrow-part-1"></span>
@@ -103,38 +58,34 @@
 
     <!-- [START] MODAL nextWord -->
     <div class="modal nextWord">
-      <p id="buen-trabajo" class="tracking-in-contract-bck-top">¡Bon treball!</p>
-      <p class="tracking-in-contract-bck-top palabra-era">La paraula era:</p>
+      <p id="buen-trabajo" class="tracking-in-contract-bck-top"></p>
+      <p class="tracking-in-contract-bck-top palabra-era" id="paraula"></p>
       <p class="modal-word tracking-in-contract-bck-top"></p>
-      <button onclick="nextWord()" class="tracking-in-contract-bck-top button-modal">Següent</button>
+      <button onclick="nextWord()" class="tracking-in-contract-bck-top button-modal" id="next"></button>
     </div>
     <!-- [END] MODAL nextWord -->
 
     <!-- [START] MODAL end -->
     <div class="modal end">
       
-      <h1 class="tracking-in-contract-bck-top">¡Has acabat!</h1>
-      <h2 class="tracking-in-contract-bck-top palabra-era">La paraula era:</h1>
+      <h1 class="tracking-in-contract-bck-top" id="final"><h1>
+      <h2 class="tracking-in-contract-bck-top palabra-era" id="parola"></h1>
       <h1 class="modal-word tracking-in-contract-bck-top"></h2>
         
-            <p class="tracking-in-contract-bck-top puntuacion-total">
-              Has guanyat un total de 
-              <span id="modalEnd-puntuacion" class="tracking-in-contract-bck-top"></span>
-              punts.
-            </p>
+            <p class="tracking-in-contract-bck-top puntuacion-total" id="missatgeFinal"></p>
         
       
-      <button onclick="salir()" class="tracking-in-contract-bck-top button-modal">Sortir</button>
+      <button onclick="salir()" class="tracking-in-contract-bck-top button-modal" id="sortir"></button>
     </div>
     <!-- [END] MODAL end -->
 
     <!-- [START] MODAL failure -->
     <div class="modal failure">
-      <p id="sin-tiempo" class="tracking-in-contract-bck-top">¡T'has quedat sense temps!</p> <!--h1 h2>h1-->
-      <p class="tracking-in-contract-bck-top palabra-era">La paraula era:
+      <p id="sin-tiempo" class="tracking-in-contract-bck-top"></p> 
+      <p class="tracking-in-contract-bck-top palabra-era" id="palabra">
         <p class="modal-word tracking-in-contract-bck-top"></p>
       </p>
-      <button onclick="nextWord()" class="tracking-in-contract-bck-top button-modal">Següent</button>
+      <button onclick="nextWord()" class="tracking-in-contract-bck-top button-modal" id="prossimo"></button>
     </div>
     <!-- [END] MODAL failure -->
 

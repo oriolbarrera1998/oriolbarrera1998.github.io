@@ -14,6 +14,10 @@
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/back.js"></script>
 
+  <!-- idioma-->
+  <script src="../js/cookieLanding.js"></script> 
+  <script src="../js/tuto_puzzle.js"></script>
+  
   <title>
     Landing Page
   </title>
@@ -30,33 +34,34 @@
         </div>
     <div class="space"></div>
     <div class="card-group">
+      <!-- Intercanviar peces -->
       <div class="card">
         <img class="card-img-top" src="../media/tutorial.gif" alt="Card image cap" height="250px">
         <div class="card-body">
-          <h5 class="card-title" style="font-weight: bold;">Intercanviar peces</h5>
-          <p class="card-text">Per moure les peces del puzzle has de seleccionar dos d'elles i les seves posicions
-            s'intercambiaran</p>
+          <h5 class="card-title" style="font-weight: bold;" id="titol1"></h5>
+          <p class="card-text" id="descripcio1"></p>
         </div>
       </div>
+      <!-- Escull un puzzle -->
       <div class="card">
         <img class="card-img-top" src="../media/puzzleTutorialmage.gif" alt="Card image cap" height="250px">
         <div class="card-body">
-          <h5 class="card-title" style="font-weight: bold;">Escull un puzzle</h5>
-          <p class="card-text">Hi han diferents puzzles a la part inferior del joc escull un i clica a "Començar el
-            joc"</p>
+          <h5 class="card-title" style="font-weight: bold;" id="titol2"></h5>
+          <p class="card-text" id="descripcio2"></p>
         </div>
       </div>
+      <!-- Puntuacio -->
       <div class="card">
         <img class="card-img-top" src="../media/imagePuzzle.png" alt="Card image cap" height="250px">
         <div class="card-body">
-          <h5 class="card-title" style="font-weight: bold;">Puntuació</h5>
-          <p class="card-text">Rebràs una puntuació basada en el temps trigat i els moviments que has necessitat per
-            completar el puzzle </p>
+          <h5 class="card-title" style="font-weight: bold;" id="titol3"></h5>
+          <p class="card-text" id="descripcio3"></p>
         </div>
       </div>
     </div>
     <div class="col-3 center">
-      <a href="jocPuzzle.html" class="btn buttonStyle1 buttonMenuLight" style="color: black; text-decoration: none;"> COMENÇAR</a>
+      <a href="jocPuzzle.html" class="btn buttonStyle1 buttonMenuLight" style="color: black; text-decoration: none;" id="boto"></a>
     </div>
   </div>
+  <script>idioma()</script>
 </body>

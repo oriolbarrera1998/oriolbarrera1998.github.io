@@ -253,3 +253,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+
+// agafem idioma
+var missatges = getCookie("idioma");
+missatges = JSON.parse(missatges);
+
+function idioma(){
+  document.getElementById("botoMig").innerHTML = missatges.jocs.jocPuzzle.botoMig;
+  document.getElementById("resetPuzzle").innerHTML = missatges.jocs.jocPuzzle.resetPuzzle;
+  document.getElementById("scr_head").innerHTML = missatges.jocs.jocPuzzle.scr_head;
+  document.getElementById("scr_time").innerHTML = missatges.jocs.jocPuzzle.scr_time;
+  document.getElementById("scr_moves").innerHTML = missatges.jocs.jocPuzzle.scr_moves;
+  document.getElementById("scr_points").innerHTML = missatges.jocs.jocPuzzle.scr_points;
+}

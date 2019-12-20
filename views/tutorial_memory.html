@@ -15,6 +15,9 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
+    <script src="../js/cookieLanding.js"></script>  
+    <script src="../js/tuto_memo.js"></script>
+
     <script src="../js/back.js"></script>
 </head>
 <body>
@@ -32,37 +35,35 @@
           <div class="card">
             <img class="card-img-top" src="../media/memory_tuto1.gif" alt="Card image cap" height="250px">
             <div class="card-body">
-              <h5 class="card-title" style="font-weight: bold;">Girar cartes</h5>
-              <p class="card-text">Per girar una carta només has de premer sobre la crta que vols girar. 
-                Aquesta girarà i mostrarà el valor que té.</p>
+              <h5 class="card-title" style="font-weight: bold;" id="titol1"></h5>
+              <p class="card-text" id="descripcio1"></p>
             </div>
           </div>
           <!-- Memory Facil vs dificl -->
           <div class="card">
             <img class="card-img-top" src="../media/memory_tuto2.gif" alt="Card image cap" height="250px">
             <div class="card-body">
-              <h5 class="card-title" style="font-weight: bold;">Hi ha dues versions del memory.</h5>
-              <p class="card-text" ></p>Facil: Memory de tota la vida.
-                <br>Difícil: Memory per a pensar una mica més!</p>
+              <h5 class="card-title" style="font-weight: bold;" id="titol2"></h5>
+              <p class="card-text" id="descripcio2"></p></p>
             </div>
           </div>
           <div class="card">
             <img class="card-img-top" src="../media/memory tuto modal.PNG" alt="Card image cap" height="250px">
             <div class="card-body">
-              <h5 class="card-title" style="font-weight: bold;">Puntuació</h5>
-              <p class="card-text">Rebràs una puntuació basada en el temps i els moviments que has necessitat per
-                completar el memory</p>
+              <h5 class="card-title" style="font-weight: bold;" id="titol3"></h5>
+              <p class="card-text" id="descripcio3"></p>
             </div>
           </div>
         </div>
         <div class="row   justify-content-center">
             <div class="col-2 text-center">
-              <a href="memory_facil.html" class="btn buttonStyle1 buttonMenuLight" style="color: black; text-decoration: none;"> FÀCIL</a>
+              <a href="memory_facil.html" class="btn buttonStyle1 buttonMenuLight" style="color: black; text-decoration: none;" id="boto1"> </a>
             </div>
             <div class="col-2  text-center">
-              <a href="memory_dificil.html" class="btn buttonStyle1 buttonMenuLight" style="color: black; text-decoration: none;"> DIFÍCIL</a>
+              <a href="memory_dificil.html" class="btn buttonStyle1 buttonMenuLight" style="color: black; text-decoration: none;" id="boto2"></a>
             </div>
         </div>  
+        <script>idioma()</script>
     </div>
 </body>
 </html>

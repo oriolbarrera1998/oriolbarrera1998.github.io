@@ -71,6 +71,8 @@ function crearRanking(jugadores) {
 
     var nombre_segundo = document.querySelector(".podium.silver .points");
     nombre_segundo.innerHTML = segundo.puntuacio;
+
+    document.querySelector(".podium.silver").style.display = "grid";
   } else {
     document.querySelector(".podium.silver").style.display = "none";
   }
@@ -84,6 +86,8 @@ function crearRanking(jugadores) {
 
     var nombre_tercero = document.querySelector(".podium.bronze .points");
     nombre_tercero.innerHTML = tercero.puntuacio;
+
+    document.querySelector(".podium.bronze").style.display = "grid";
   } else {
     document.querySelector(".podium.bronze").style.display = "none";
   }

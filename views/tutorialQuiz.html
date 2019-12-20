@@ -13,6 +13,8 @@
   <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/back.js"></script>
+  <script src="../js/cookieLanding.js"></script>
+  <script src="../js/tuto_quizz.js"></script>
 
   <title>
     Landing Page
@@ -33,32 +35,28 @@
       <div class="card">
         <img class="card-img-top" src="../media/GifClicarRuleta.gif" alt="Card image cap" height="250px">
         <div class="card-body">
-          <h5 class="card-title" style="font-weight: bold;">Fes girar la ruleta</h5>
-          <p class="card-text">Per fer girar la ruleta, apreta a sobre del botó girar, un cop s'hagi parat, mostrará
-              el tema de la següent pregunta
-          </p>
+          <h5 class="card-title" style="font-weight: bold;" id="titol1"></h5>
+          <p class="card-text" id="descripcio1"></p>
         </div>
       </div>
       <div class="card">
         <img class="card-img-top" src="../media/puzzleTutorialmage.gif" alt="Card image cap" height="250px">
         <div class="card-body">
-          <h5 class="card-title" style="font-weight: bold;">Selecciona la resposta correcta</h5>
-          <p class="card-text">Quan la ruleta hagi acabat de girar, apareixerà una pregunta de la temàtica corresponent
-              hi ha quatre respostes possibles, apreta sobre la que pensis que és la correcta"
-            </p>
+          <h5 class="card-title" style="font-weight: bold;" id="titol2"></h5>
+          <p class="card-text" id="descripcio2"></p>
         </div>
       </div>
       <div class="card">
         <img class="card-img-top" src="../media/imagePuzzle.png" alt="Card image cap" height="250px">
         <div class="card-body">
-          <h5 class="card-title" style="font-weight: bold;">Puntuació</h5>
-          <p class="card-text">Rebràs una puntuació basada en el nombre de respostes que hagis encertat
-            </p>
+          <h5 class="card-title" style="font-weight: bold;" id="titol3"></h5>
+          <p class="card-text" id="descripcio3"></p>
         </div>
       </div>
     </div>
     <div class="col-3 center">
-      <a href="joc.html" class="btn buttonStyle1 buttonMenuLight" style="color: black; text-decoration: none;"> COMENÇAR</a>
+      <a href="joc.html" class="btn buttonStyle1 buttonMenuLight" style="color: black; text-decoration: none;" id="boto"> </a>
     </div>
   </div>
+  <script>idioma()</script>
 </body>

@@ -39,7 +39,7 @@ window.onload = function() {
   var polygonTemplate = polygonSeries.mapPolygons.template;
   polygonTemplate.size = 100;
   
-  polygonTemplate.tooltipText = " [font-size: 100px] {name} {radio} [/]";
+  polygonTemplate.tooltipText = " [font-size: 33px] {name} {radio} [/]";
   polygonTemplate.fill = am4core.color("#11999e");
   
   // Creem image series
@@ -59,8 +59,8 @@ window.onload = function() {
   imageSeriesTemplate.propertyFields.latitude = "latitude";
   imageSeriesTemplate.propertyFields.longitude = "longitude";
   
-  imageSeriesTemplate.tooltipText = "[font-size: 100px] {title}";
-  imageSeriesTemplate.fill = am4core.color("#C00000");
+  imageSeriesTemplate.tooltipText = "[font-size: 33px] {title}";
+  imageSeriesTemplate.fill = am4core.color("#FFFFFF");
   
   // set zoom events
   imageSeries.events.on("datavalidated", updateImageVisibility);
@@ -180,9 +180,8 @@ window.onload = function() {
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
         "pais": "Aràbia Saudita",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "nomRadio": "N/A",
+        "informacioRadio": "Encara no hi ha informació disponible sobre aquesta ràdio. "
     }
     },
     {
@@ -208,10 +207,10 @@ window.onload = function() {
       radio: "../utils/audios/ràdios del món/ràdio AUSTRALIA.mp3",
       radio2: "https://stream.fbiradio.com/stream.mp3",
       informacio: {
-        "pais": "Canadà",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "pais": "Australia",
+        "nomRadio": "ABC Radio National",
+        "informacioRadio": "ABC Radio National, coneguda com a RN, és una xarxa de ràdio pública a càrrec de la Australian Broadcasting Corporation. Radio National emet programes nacionals sobre temes que inclouen notícies i actualitat, art, qüestions socials, ciències, drama i comèdia. "
+        + "Va emetre per primer com l'any 1923, ara fa quasi 100 anys."
     }
     },
     {
@@ -239,9 +238,8 @@ window.onload = function() {
       radio2: "http://ice1.crossradio.com.br:8526/live.mp3",
       informacio: {
         "pais": "Brazil",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One és la ràdio de notícies i informacions que transmet en anglés, pertany a la Corporació Canadenca "
-        + "de Radiodifusió (CBC, de l'acrònim en anglés Canadian Broadcasting Corporation). Ofereix programació tant a nivell local com nacional, i està disponible a les freqüències AM i FM per al 98 per cent dels canadencs. "
+        "nomRadio": "N/A",
+        "informacioRadio": "Encara no hi ha informació disponible sobre aquesta ràdio. "
     }
     },
     {
@@ -309,7 +307,7 @@ window.onload = function() {
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
         "pais": "Indonèsia",
-        "nomRadio": "Radio Vancouver",
+        "nomRadio": "Radio Republik Indonesia",
         "informacioRadio": "Radio Republik Indonesia és la red de ràdio pública propietat de l'estat d'Indonèsia. Té diversos canals que emeten per tota Indonèsia i també a l'extranger per donar servei a tots els ciutadans indonesis de tot el món.  "
         + "Va ser fundada l'11 de septembre de 1945 i a partir de l'any 2006 no està controlada pel gobern."
       }
@@ -323,9 +321,9 @@ window.onload = function() {
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
         "pais": "Itàlia",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "nomRadio": "Radiotelevisione Italiana",
+        "informacioRadio": "La Radiotelevisione Italiana (antigament coneguda com a Radio Audizioni Italia) o Rai és l'empresa de televisió i ràdio pública i estatal d'Itàlia. La RAI és l'empresa pública de televisió més gran a Europa. "
+        + "Forma part de la Unió Europea de Radiodifusió."
     }
     },
     {
@@ -349,10 +347,10 @@ window.onload = function() {
       radio: "../utils/audios/ràdios del món/ràdio KAZAKHSTAN.mp3",
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
-        "pais": "Canadà",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "pais": "Kazakhstan",
+        "nomRadio": "Қазақстан",
+        "informacioRadio": "Qazaqstan Radio and Television Corporation (Kazakh: «Қазақстан» РТРК» АҚ; Qazaqstan RTRK AQ) és una de les companyies de mitjans de comunicació més grans de Kazakhstan. "
+        + "És propietària de tres canals de televisió i quatre estacions de ràdio. "
     }
     },
     {
@@ -392,9 +390,8 @@ window.onload = function() {
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
         "pais": "Noruega",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "nomRadio": "Norsk Rikskringkasting",
+        "informacioRadio": "La Companyia Noruega de Radiodifusió (en noruec: Norsk Rikskringkasting AS), usualment coneguda com la NRK, és la companyia estatal noruega de radiodifusió, així com l'organització de mitjans de comunicació més gran del país. És membre fundador de la Unió Europea de Radiodifusió."
     }
     },
     {
@@ -406,9 +403,9 @@ window.onload = function() {
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
         "pais": "Nova Zelanda",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "nomRadio": "RNZ National",
+        "informacioRadio": "RNZ National, abans Ràdio Nova Zelanda Nacional, i coneguda fins a 2007 com a Ràdio Nacional, és una xarxa de ràdio en anglès de Nova Zelanda no comercial. S'especialitza en programes "
+        + "de notícies, art, música i cultura de Nova Zelanda en general, incolent material en llengua maorí."
     }
     },
     {
@@ -420,9 +417,8 @@ window.onload = function() {
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
         "pais": "Portugal",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "nomRadio": "Rádio e Televisão de Portugal",
+        "informacioRadio": "Rádio e Televisão de Portugal (abreujat RTP, en català Ràdio i Televisió de Portugal) és l'empresa pública de ràdio i televisió portuguesa. Va començar amb el nom d'Emissora Nacional el 4 d'agost del 1935, substituint al servei iniciat per Correios, Telégrafos e Telefones del 1930."
     }
     },
     {
@@ -434,9 +430,8 @@ window.onload = function() {
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
         "pais": "Russia",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "nomRadio": "N/A",
+        "informacioRadio": "Encara no hi ha informació disponible sobre aquesta ràdio. "
     }
     },
     {
@@ -448,9 +443,9 @@ window.onload = function() {
       radio2: "http://touhouradio.com:8000/.mp3",
       informacio: {
         "pais": "Turquia",
-        "nomRadio": "Radio Vancouver",
-        "informacioRadio": "La CBC Radio One es la radio de noticias e informaciones, que transmite en inglés, perteneciente a la Corporación Canadiense "
-        + "de Radioifusión (CBC, del acrónimo en inglés CBC Logo 1992-Present.svg Canadian Broadcasting Corporation). Ofrece programación tanto a nivel local y nacional, y está disponible en las frecuencias AM y FM para el 98 por ciento de los canadienses. "
+        "nomRadio": "Türkiye Radyo Televizyon Kurumu",
+        "informacioRadio": "Türkiye Radyo Televizyon Kurumu (TRT, en català Corporació de Ràdio i Televisió Turca) és la Corporació pública de ràdio i televisió de Turquia, la seva seu és a Ankara. "
+        + "Va ser fundada l'any 1964 pel Govern de Turquía."
     }
     }
   ];

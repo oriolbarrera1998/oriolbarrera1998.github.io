@@ -17,20 +17,60 @@
         <script src="../utils/mapes/maps.js"></script>
         <script src="../utils/mapes/worldLow.js"></script>
         <script src="../utils/mapes/animated.js"></script>
-      <div id="seleccio">
-        <h2 id="seleccioText">Escolleix una década:</h2>
+      <!--<div id="seleccio">
+        <h2 id="seleccioText">Escull una década:</h2>
         <form>
-          <input type="radio" name="anys" value="1" checked> 1920s<br>
-          <input type="radio" name="anys" value="2"> 1930s<br>
-          <input type="radio" name="anys" value="3"> 1940s<br>
-          <input type="radio" name="anys" value="4"> 1950s<br>
-          <input type="radio" name="anys" value="5"> 1960s<br>
-          <input type="radio" name="anys" value="6"> 1970s <br>
-          <input type="radio" name="anys" value="7"> 1980s <br>   
-          <input type="button" onclick="myFunction()" value="Mostra">
+          <input class="radioBtn" type="radio" name="anys" value="1" checked> 1920s<br>
+          <input class="radioBtn" type="radio" name="anys" value="2"> 1930s<br>
+          <input class="radioBtn" type="radio" name="anys" value="3"> 1940s<br>
+          <input class="radioBtn" type="radio" name="anys" value="4"> 1950s<br>
+          <input class="radioBtn" type="radio" name="anys" value="5"> 1960s<br>
+          <input class="radioBtn" type="radio" name="anys" value="6"> 1970s <br>
+          <input class="radioBtn" type="radio" name="anys" value="7"> 1980s <br>   
         </form> 
-        
+      </div>-->
+      <div id="seleccio">
+        <div class="control-group">
+          <h2 id="seleccioText">Escull una década:</h2>
+          <label class="control control-radio">
+            1920s
+                  <input class="radioBtn" type="radio" name="anys" value="1" checked="checked" />
+              <div class="control_indicator"></div>
+          </label>
+          <label class="control control-radio">
+            1930s
+                  <input class="radioBtn" type="radio" name="anys" value="2" />
+              <div class="control_indicator"></div>
+          </label>
+          <label class="control control-radio">
+            1940s
+                  <input class="radioBtn" type="radio" name="anys" value="3" />
+              <div class="control_indicator"></div>
+          </label>
+          <label class="control control-radio">
+            1950s
+                  <input class="radioBtn" type="radio" name="anys" value="4" />
+              <div class="control_indicator"></div>
+          </label>
+          <label class="control control-radio">
+            1960s
+                <input class="radioBtn" type="radio" name="anys" value="5" />
+            <div class="control_indicator"></div>
+          </label>
+          <label class="control control-radio">
+            1970s
+                <input class="radioBtn" type="radio" name="anys" value="6" />
+            <div class="control_indicator"></div>
+          </label>
+          <label class="control control-radio">
+            1980s
+                <input class="radioBtn" type="radio" name="anys" value="7" />
+            <div class="control_indicator"></div>
+          </label>
       </div>
+    </div>
+        
+      
         <div id="chartdiv">
           <script src="../utils/mapes/spainLow.js"></script>
             <script src="../js/mapaEspanya.js"></script>
