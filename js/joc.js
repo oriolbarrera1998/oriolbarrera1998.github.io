@@ -5,7 +5,7 @@ const puntsText = document.getElementById("punts");
 const estatBarraProgres = document.getElementById("estatBarraProgres");
 
 const PUNTS_ENCERTAR = 10;
-const NUM_PREGUNTES = 5;
+const NUM_PREGUNTES = 4;
 //const TEMPS_PREGUNTA = 30;
 
 let preguntaActual = {};
@@ -107,10 +107,10 @@ novaPreguntaEmissio = () => {
 
   //girar = true;
 
-  contPreguntes++;
+  //contPreguntes++;
 
-  barraText.innerText = `Pregunta ${contPreguntes}/${NUM_PREGUNTES}`;
-  estatBarraProgres.style.width = `${(contPreguntes / NUM_PREGUNTES) * 100}%`;
+  barraText.innerText = `Pregunta ${contPreguntes+1}/${NUM_PREGUNTES}`;
+  estatBarraProgres.style.width = `${((contPreguntes+1) / NUM_PREGUNTES) * 100}%`;
 
   const indexPreguntaEmissio = Math.floor(
     Math.random() * llistaPreguntesEmissio.length
@@ -137,9 +137,9 @@ novaPreguntaRecepcio = () => {
 
   //girar = true;
 
-  contPreguntes++;
-  barraText.innerText = `Pregunta ${contPreguntes}/${NUM_PREGUNTES}`;
-  estatBarraProgres.style.width = `${(contPreguntes / NUM_PREGUNTES) * 100}%`;
+  //contPreguntes++;
+  barraText.innerText = `Pregunta ${contPreguntes+1}/${NUM_PREGUNTES}`;
+  estatBarraProgres.style.width = `${((contPreguntes+1) / NUM_PREGUNTES) * 100}%`;
 
   const indexPreguntaRecepcio = Math.floor(
     Math.random() * llistaPreguntesRecepcio.length
@@ -169,9 +169,9 @@ novaPreguntaTransmissio = () => {
 
   //girar = true;
 
-  contPreguntes++;
-  barraText.innerText = `Pregunta ${contPreguntes}/${NUM_PREGUNTES}`;
-  estatBarraProgres.style.width = `${(contPreguntes / NUM_PREGUNTES) * 100}%`;
+  //contPreguntes++;
+  barraText.innerText = `Pregunta ${contPreguntes+1}/${NUM_PREGUNTES}`;
+  estatBarraProgres.style.width = `${((contPreguntes+1) / NUM_PREGUNTES) * 100}%`;
 
   const indexPreguntaTransmissio = Math.floor(
     Math.random() * llistaPreguntesTransmissio.length
@@ -225,6 +225,14 @@ opcions.forEach(opcio => {
       document.querySelector("#spin").disabled = false;
       document.querySelector(".cover").style.display = "inline";
     }, 1000);
+    contPreguntes++;
+    if (contPreguntes >= NUM_PREGUNTES) {
+      document.querySelector(".cover").style.display = "none";
+      setTimeout(() => {
+        passarRanking();
+        return window.location.assign("../views/final.html");
+      }, 800);
+    }
   });
 });
 
@@ -356,7 +364,7 @@ function drawRouletteWheel() {
       ctx.restore();
     }
 
-    //Arrow
+    //Disbuixem la fletxeta
     ctx.fillStyle = "black";
     ctx.beginPath();
     ctx.moveTo(250 - 4, 250 - (outsideRadius + 5));

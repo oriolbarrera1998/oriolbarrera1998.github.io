@@ -134,3 +134,20 @@ body,html {
 #imatgeBoto{
     max-width: 75px;
 }
+
+/*Boto about us*/
+#boto_about{
+    width: 100px;
+    height: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*classe avatar*/
+.avatar{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 50px;
+}

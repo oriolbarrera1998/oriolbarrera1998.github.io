@@ -135,6 +135,9 @@ var ESP = {
           "Recibirás una puntuación basada en el número de respuestas que hayas acertado."
       },
       boto: "COMENZAR"
+    },
+    about_us:{
+      descripcio: "<h2>¿Quién somos?</h2><p>Nosotros somos un grupo de estudiantes de Centre Estudis Politècnics, ubicado en Plaça Urquinaona número 4, en Barcelona</p>"
     }
   },
   mapa: {
