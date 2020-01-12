@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
+  // Intercambien les posicions del array x[]
   function intercambiar(N1, N2) {
     var first = x.indexOf(parseInt(N1, 10)),
       second = x.indexOf(parseInt(N2, 10));
